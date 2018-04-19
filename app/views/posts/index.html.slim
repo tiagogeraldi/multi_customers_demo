@@ -1,0 +1,24 @@
+h2 Listing posts
+
+table.table
+  thead
+    tr
+      th Title
+      th Content
+      th
+      th
+      th
+
+  tbody
+    - @posts.each do |post|
+      tr
+        td = post.title
+        td = post.content
+        td = link_to 'Show', post, class: 'btn btn-sm btn-outline-primary'
+        td = link_to 'Edit', edit_post_path(post), class: 'btn btn-sm btn-outline-secondary'
+        td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' },
+          method: :delete, class: 'btn btn-outline-danger btn-sm'
+
+br
+
+= link_to 'New Post', new_post_path, class: 'btn btn-default'

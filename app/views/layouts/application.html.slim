@@ -9,8 +9,18 @@ html
     == javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
     == csrf_meta_tags
   body
-    header
-      == render 'layouts/navigation'
     main[role="main"]
-      == render 'layouts/messages'
-      == yield
+      .container
+        .navbar.navbar-expand-lg.navbar-light.bg-light
+          .navbar-brand
+            Multi Customers Demo
+          .navbar-collapse.collapse.justify-content-end
+            ul.navbar-nav
+              - if signed_in?
+                li.nav-item
+                  = link_to 'Logout', destroy_user_session_path, method: :delete,
+                    class: 'nav-link'
+        br
+        == render 'layouts/messages'
+        br
+        == yield

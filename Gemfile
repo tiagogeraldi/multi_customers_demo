@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-ruby '2.4.2'
+ruby '2.4.1'
 gem 'rails', '~> 5.2.0'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
@@ -29,6 +29,7 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
 gem 'slim-rails'
+gem 'devise'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
