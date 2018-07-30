@@ -1,4 +1,4 @@
-Multi Customers without subdomain
+Multiple Tenants Without Subdomain
 ================
 
 [Apartment](https://github.com/influitive/apartment) is a nice gem to have multi customers by domain, subdomain or host. You can separate different customers data at the DB level for each one access a total different area.
