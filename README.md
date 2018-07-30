@@ -1,20 +1,11 @@
-Multi Customers Demo
+Multi Customers without subdomain
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+[Apartment](https://github.com/influitive/apartment) is a nice gem to have multi customers by domain, subdomain or host. You can separate different customers data at the DB level, so each one access a total different area.
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+The most common use for Apartment is have a different subdomain for each customer example: 'http://new-customer.your-domain.com'. However, on this example, we don't want that.
 
-Problems? Issues?
------------
-
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
-
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
+We prefer to have a first screen where user must inform the customer name, then, go to the regular login page by Devise.
 
 Ruby on Rails
 -------------
@@ -29,20 +20,16 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 Getting Started
 ---------------
 
-Documentation and Support
--------------------------
+bundle exec rake db:create db:migrate db:seed
 
-Issues
--------------
+Running
+---------------
+bundle exec rails s
 
-Similar Projects
-----------------
+Go to http://localhost:3000
 
-Contributing
-------------
 
-Credits
--------
+Testing
+-----------
 
-License
--------
+bundle exec rspec
