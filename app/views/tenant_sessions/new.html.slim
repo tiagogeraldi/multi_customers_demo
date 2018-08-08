@@ -4,3 +4,16 @@
     = f.text_field :name, class: 'form-control'
   .form-group
     = f.submit 'Go', class: 'btn btn-primary'
+hr.line
+pre
+  p
+    | Before log in, you must first type the name of the customer.
+    | 'first-customer' or 'second-customer' for our example from `seed.rb`.
+  p
+    | user1@customer.com belongs to first-customer
+    br
+    | user2@customer.com belongs to second-customer
+  p
+    | Each one can only login if you select the correspoing customer.
+  p
+    | Password for any user: '123123123'

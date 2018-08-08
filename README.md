@@ -20,6 +20,9 @@ Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.
 Getting Started
 ---------------
 
+mv config/database.yml.example config/database.yml
+# check your DB settings
+
 bundle exec rake db:create db:migrate db:seed
 
 Running

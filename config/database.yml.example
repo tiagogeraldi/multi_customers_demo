@@ -18,7 +18,7 @@ development:
   encoding: unicode
   database: multi_customers_demo_dev
   pool:     5
-  username: tiago
+  username: 
   password:
   template: template0
 
@@ -46,16 +46,6 @@ test:
   encoding: unicode
   database: multi_customers_demo_tst
   pool:     5
-  username: tiago
-  password:
-  template: template0
-
-production:
-  adapter:  postgresql
-  host:     localhost
-  encoding: unicode
-  database: multi_customers_demo_production
-  pool:     5
-  username: tiago
+  username: 
   password:
   template: template0
