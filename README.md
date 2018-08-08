@@ -7,6 +7,8 @@ The most common use for Apartment is have a different subdomain for each custome
 
 We prefer to have a first screen where user must inform the customer name, then, go to the regular login page by Devise.
 
+Check this out live at: https://tenant-without-subdomain.herokuapp.com
+
 Ruby on Rails
 -------------
 
