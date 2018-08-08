@@ -9,6 +9,12 @@ We prefer to have a first screen where user must inform the customer name, then,
 
 Check this out live at: https://tenant-without-subdomain.herokuapp.com
 
+Screenshots:
+
+![Select your customer name](https://github.com/tiagogeraldi/multi_customers_demo/blob/master/public/screenshot1.png?raw=true)
+
+![Log in](https://github.com/tiagogeraldi/multi_customers_demo/blob/master/public/screenshot2.png?raw=true)
+
 Ruby on Rails
 -------------
 
@@ -23,7 +29,7 @@ Getting Started
 ---------------
 
 mv config/database.yml.example config/database.yml
-# check your DB settings
+check your DB settings
 
 bundle exec rake db:create db:migrate db:seed
 
